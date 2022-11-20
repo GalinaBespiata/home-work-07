@@ -1,0 +1,22 @@
+body {
+    color: var(--primary-text-color);
+    font-family: Roboto, Tahoma, Verdana, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+  }
+  
+  .section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline-offset: -2px;
+  }
+  .section-title {
+    margin-bottom: 50px;
+  }

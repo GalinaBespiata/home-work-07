@@ -1,0 +1,21 @@
+.logo,
+.logo-accent {
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+.logo-accent {
+  color: var(--color-logo-accent);
+}
+.header-logo {
+  margin-right: 93px;
+}
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
+}
+.logo-light {
+  color: #ffffff;
+}

@@ -1,0 +1,30 @@
+.advantages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: #f5f4fa;
+  }
+  .cards__list {
+    display: flex;
+    gap: 30px;
+  }
+  .cards__item {
+    width: 270px;
+  }
+  .cards__caption{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+.cards__caption {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  }
+  .cards__description {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
