@@ -10,13 +10,30 @@
   .cards__list {
     display: flex;
     gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
   }
   .cards__item {
-    width: 270px;
+    width: 450px;
+    max-width: 100%;
+    
+    @media screen and (min-width: 768px) {
+      max-width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width:1200px) {
+      width: 270px;
+      }
   }
   .cards__caption{
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: start;
+    }
+    @media screen and (min-width:1200px) {
+      text-align: start;
+      }
   }
 .cards__caption {
   font-size: 14px;

@@ -1,12 +1,29 @@
+.title {
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.16;
+  @media screen and (min-width:1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
 .container-team {
     display: flex;
     align-items: center;
     gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .team-member {
-    width: 270px;
+    width: 450px;
     background-color: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    @media screen and (min-width:768px) {
+      width: calc((100% - 60px) / 2);
+      }
+    @media screen and (min-width:1200px) {
+      width: 270px;
+      }
   }
   .name-member {
     padding-top: 30px;
