@@ -44,10 +44,13 @@
   }
   
   .list-сontact.nav {
-    display: flex;
+    display: none;
     gap: 50px;
     margin-left: auto;
+    @media screen and (min-width:768px) {
+      display:flex;
   }
+}
   .link-navigation {
     color: var(--minor-text-color);
     font-size: 14px;
