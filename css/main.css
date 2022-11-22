@@ -248,6 +248,7 @@ body {
 .container-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .container-nav {
@@ -260,10 +261,15 @@ body {
 }
 
 .list.nav {
-  display: flex;
-  align-items: center;
-  gap: 50px;
+  display: none;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .list.nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
 }
 
 .link-nav {
@@ -294,9 +300,14 @@ body {
 }
 
 .list-сontact.nav {
-  display: flex;
+  display: none;
   gap: 50px;
   margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .list-сontact.nav {
+    display: flex;
+  }
 }
 
 .link-navigation {

@@ -1,6 +1,7 @@
 .container-header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   .container-nav {
     display: flex;
@@ -10,11 +11,14 @@
     border-bottom: 1px solid #ececec;
   }
   .list.nav {
+    display: none;
+    position: relative;
+    @media screen and (min-width:768px) {
     display: flex;
     align-items: center;
     gap: 50px;
-    position: relative;
   }
+}
   .link-nav {
     display: flex;
     color: var(--primary-text-color);
@@ -42,7 +46,7 @@
       bottom: -1px;
     }
   }
-  
+
   .list-сontact.nav {
     display: none;
     gap: 50px;
