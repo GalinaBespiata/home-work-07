@@ -1,28 +1,80 @@
 .slogan {
+  @media screen and (min-width: 480px) {
+    padding: 118px auto;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 118px auto;
+    
+  }
     max-width: 1600px;
     margin: 0 auto;
     background-color: var(--dark-bacground-color);
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/bg-hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
     color: var(--minor-text-color);
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bg-hero/bg-header_mobile@1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/bg-hero/bg-header_mobile@2x.jpg);
+  }
+   @media screen and (min-width:482px) {
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg-hero/bg-header_tablet@1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  background-image: url(../images/bg-hero/bg-header_tablet@2x.jpg);
+   }
+
+   @media screen and (min-width:769px) {
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg-hero/bg-header_desck@1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  background-image: url(../images/bg-hero/bg-header_desck@2x.jpg);
+  }
   }
   .slogan-text {
+    //mobile
+    @media screen and (min-width: 480px) {
+     
+    }
+    //tablet
+    @media screen and (min-width: 768px) {
+      font-weight: 900;
+      font-size: 26px;
+      line-height: calc(42 / 26);
+      letter-spacing: 0.06em;
+      width: 360px;
+      
+    }
+    //descktop
+    @media screen and (min-width: 1200px) {
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.36;
+      letter-spacing: 0.06em;
+      width: 696px;
+    }
     color: var(--secondary-text-color);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
-    width: 696px;
     margin: 0 auto;
+
   }
   .button.primary {
     background-color: var(--color-accent);
@@ -41,4 +93,9 @@
     min-width: 216px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     margin: 30px auto 0;
+    @media screen and (min-width: 768px) {
+      width: 200px;
+      height: 50px;
+      padding: 10px 24px;
+    }
   }
