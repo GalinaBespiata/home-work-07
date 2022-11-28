@@ -60,6 +60,7 @@ a {
 img {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 body {
@@ -174,11 +175,11 @@ body {
   text-decoration: none;
 }
 
-.is-hidden {
+.mob-menu {
   display: block;
 }
 @media screen and (min-width: 768px) {
-  .is-hidden {
+  .mob-menu {
     display: none;
   }
 }
@@ -372,7 +373,8 @@ body {
 }
 
 .slogan {
-  max-width: 1600px;
+  padding: 118px auto;
+  background-size: cover;
   margin: 0 auto;
   background-color: var(--dark-bacground-color);
   background-repeat: no-repeat;
@@ -382,14 +384,9 @@ body {
   padding-bottom: 200px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero/bg-header_mobile@1x.jpg);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .slogan {
-    padding: 118px auto;
-  }
-}
-@media screen and (min-width: 768px) {
-  .slogan {
-    padding: 118px auto;
+    padding: 200px auto;
   }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -397,6 +394,27 @@ body {
     background-image: url(../images/bg-hero/bg-header_mobile@2x.jpg);
   }
 }
+@media screen and (min-width: 482px) {
+  .slogan {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero/bg-header_tablet@1x.jpg);
+  }
+}
+@media screen and (min-width: 482px) and (min-device-pixel-ratio: 2), screen and (min-width: 482px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 482px) and (min-resolution: 192dpi), screen and (min-width: 482px) and (min-resolution: 2dppx) {
+  .slogan {
+    background-image: url(../images/bg-hero/bg-header_tablet@2x.jpg);
+  }
+}
+@media screen and (min-width: 769px) {
+  .slogan {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero/bg-header_desck@1x.jpg);
+  }
+}
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .slogan {
+    background-image: url(../images/bg-hero/bg-header_desck@2x.jpg);
+  }
+}
+
 .slogan-text {
   color: var(--secondary-text-color);
   text-align: center;
@@ -569,7 +587,6 @@ body {
 
 .team-member {
   width: 450px;
-  height: 622px;
   background-color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -807,8 +824,26 @@ body {
 
 .container-brand {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  flex-direction: column;
   gap: 70px;
+}
+@media screen and (min-width: 768px) {
+  .container-brand {
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
+.container-cellar-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .container-cellar-left {
+    display: block;
+  }
 }
 
 .communication {
@@ -817,6 +852,12 @@ body {
 
 .communication-item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.list-сontaction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .location {
@@ -829,6 +870,17 @@ body {
   line-height: 1.71;
   display: block;
   color: #255, 255, 255, 0.6;
+}
+
+.container-cellar-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .container-cellar-right {
+    display: block;
+  }
 }
 
 .cellar-right-title {
@@ -870,6 +922,14 @@ body {
 
 .cellar-container-subscribe {
   margin-left: 23px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .cellar-container-subscribe {
+    flex-direction: row;
+  }
 }
 
 .subscribe-form {
@@ -877,6 +937,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 12px;
+  flex-direction: column;
 }
 
 .subscribe-input {
@@ -885,7 +946,7 @@ body {
   line-height: 1.25;
   padding-left: 16px;
   height: 50px;
-  width: 358px;
+  max-width: 450px;
   border: 1px solid rgba(255, 255, 255, 0.3019607843);
   cursor: pointer;
   border-radius: 4px;

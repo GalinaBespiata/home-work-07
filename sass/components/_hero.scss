@@ -1,12 +1,12 @@
 .slogan {
-  @media screen and (min-width: 480px) {
-    padding: 118px auto;
-  }
-  @media screen and (min-width: 768px) {
-    padding: 118px auto;
+  padding: 118px auto;
+ 
+  @media screen and (min-width: 1200px) {
+    padding: 200px auto;
     
   }
-    max-width: 1600px;
+  background-size: cover;
+   
     margin: 0 auto;
     background-color: var(--dark-bacground-color);
     background-repeat: no-repeat;
@@ -35,7 +35,7 @@
 (min-resolution: 2dppx) {
   background-image: url(../images/bg-hero/bg-header_tablet@2x.jpg);
    }
-
+  }
    @media screen and (min-width:769px) {
     background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -48,11 +48,9 @@
   background-image: url(../images/bg-hero/bg-header_desck@2x.jpg);
   }
   }
+}
   .slogan-text {
     //mobile
-    @media screen and (min-width: 480px) {
-     
-    }
     //tablet
     @media screen and (min-width: 768px) {
       font-weight: 900;
