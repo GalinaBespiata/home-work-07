@@ -830,8 +830,19 @@ body {
 }
 @media screen and (min-width: 768px) {
   .container-brand {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: row;
-    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-brand {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: baseline;
   }
 }
 
@@ -928,7 +939,9 @@ body {
 }
 @media screen and (min-width: 768px) {
   .cellar-container-subscribe {
-    flex-direction: row;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
@@ -938,6 +951,11 @@ body {
   align-items: center;
   gap: 12px;
   flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    flex-direction: row;
+  }
 }
 
 .subscribe-input {
@@ -954,6 +972,18 @@ body {
   background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) {
+  .subscribe-input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-input {
+    flex-direction: row;
+    justify-content: baseline;
+    width: 358px;
+  }
+}
 
 .subscribe-input:focus {
   border: var(--color-accent);
@@ -967,7 +997,7 @@ body {
 }
 
 .submit-subscribe {
-  width: 200px;
+  max-width: 200px;
   height: 50px;
   background-color: var(--color-accent);
   color: var(--secondary-text-color);
